@@ -1,0 +1,25 @@
+{
+    "name": "covid-support",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev:backend": "nodemon index.js",
+        "dev:frontend": "npm --prefix ./client/ start",
+        "dev": "concurrently \"npm run dev:*\""
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "concurrently": "^6.2.0",
+        "nodemon": "^2.0.7"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "helmet": "^4.6.0",
+        "mongoose": "^5.12.13"
+    }
+}
