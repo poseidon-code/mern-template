@@ -14,7 +14,7 @@ const corsOptions = {
 app.use(helmet());
 app.use(cors(corsOptions));
 app.use(express.json());
-app.use(express.urlencoded({extended = true}));
+app.use(express.urlencoded({ extended: true }));
 
 // mongoose
 //     .connect(URI, { useNewUrlParser: true, useUnifiedTopology: true })
